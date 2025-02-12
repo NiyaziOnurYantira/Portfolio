@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ipRights } from '../data/ipRights';
-import StatusPieChart from '../components/StatusPieChart';  // Tek bir dosya üzerinden her iki pie chart
+import StatusPieChart from '../components/StatusPieChart';
 import DataDisplay from '../components/DataDisplay';
 import SummaryCard from '../components/SummaryCard';
 import PatentFilingLineChart from '../components/PatentFilingLineChart';
@@ -29,24 +29,33 @@ export default function Home() {
 
   if (!data) return <div>Loading...</div>;
 
+  const totalPatents = data.patents.length;
+  const totalTrademarks = data.trademarks.length;
+  const totalCopyrights = data.copyrights.length;
+  const totalTradeSecrets = data.tradesecrets.length;
+  const totalIndustrialDesigns = data.industrialDesigns.length;
+  const totalGeographicalIndications = data.geographicalIndications.length;
+  const totalSoftwareLicenses = data.softwareLicenses.length;
+  const totalDomainNames = data.domainNames.length;
+
   return (
     <div style={{ maxWidth: '800px', margin: '2rem auto', fontFamily: 'Arial, sans-serif' }}>
-      <h1 style={{ textAlign: 'center', fontSize: '30px' }}>Dashboard</h1>
+      <h1  style={{textAlign: 'center', fontSize: '30px'}}>Dashboard</h1>
       
       {/* Summary cards */}
       <div style={{ display: 'flex', justifyContent: 'space-around', marginBottom: '2rem' }}>
-        <SummaryCard title="Number of Patents" value={data.patents.length} />
-        <SummaryCard title="Number of Brands" value={data.trademarks.length} />
-        <SummaryCard title="Number of Copyrights" value={data.copyrights.length} />
-        <SummaryCard title="Number of TradeSecrets" value={data.tradesecrets.length} />
-        <SummaryCard title="Number of Industrial Designs" value={data.industrialDesigns.length} />
-        <SummaryCard title="Number of Geographical Indications" value={data.geographicalIndications.length} />
-        <SummaryCard title="Number of Software Licenses" value={data.softwareLicenses.length} />
-        <SummaryCard title="Number of Domain Names" value={data.domainNames.length} />
+        <SummaryCard title="Number of Patents" value={totalPatents} />
+        <SummaryCard title="Number of Brands" value={totalTrademarks} />
+        <SummaryCard title="Number of Copyrights" value={totalCopyrights} />
+        <SummaryCard title="Number of TradeSecrets" value={totalTradeSecrets} />
+        <SummaryCard title="Number of Industrial Designs" value={totalIndustrialDesigns} />
+        <SummaryCard title="Number of Geographical Indications" value={totalGeographicalIndications} />
+        <SummaryCard title="Number of Software Licenses" value={totalSoftwareLicenses} />
+        <SummaryCard title="Number of Domain Names" value={totalDomainNames} />
       </div>
 
-      {/* Pie Charts */}
-      <StatusPieChart data={data} copyrights={data.copyrights} tradesecrets={data.tradesecrets} softwareLicenses={data.softwareLicenses} />
+      {/* Pie Chart */}
+      <StatusPieChart data={data} />
       
       {/* Line chart */}
       {data.patents && data.patents.length > 0 && (

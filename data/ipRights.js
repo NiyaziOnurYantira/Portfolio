@@ -113,9 +113,21 @@ export const ipRights = {
         licensees: ["TechEdu Corp."]
       },
       {
+        id: "CR004",
+        workTitle: "Advanced Quantum Machine Learning",
+        type: "Literary Work",
+        creationDate: "2024-05-10",
+        registrationNumber: "TX9-876-546",
+        authorshipType: "individual",
+        depositCopy: "DC123459",
+        derivativeWorks: ["French Translation", "E-Book Edition"],
+        relatedRights: ["CR001", "CR002"],
+        licensees: ["QuantumEdu Ltd."]
+      },
+      {
         id: "CR003",
         workTitle: "Blockchain Implementation Guide",
-        type: "Literary Work",
+        type: "Work of the Visual Arts",
         creationDate: "2024-04-01",
         registrationNumber: "TX9-876-545",
         authorshipType: "joint work",
@@ -152,6 +164,18 @@ export const ipRights = {
         securityAudits: ["AUD2024Q2"]
       },
       {
+        id: "TS004",
+        secretName: "Next-Gen AI Model Compression",
+        category: "Algorithm",
+        implementationDate: "2024-05-20",
+        securityLevel: "Confidential",
+        accessControl: "Level 3",
+        custodian: "Dr. Laura Bennett",
+        relatedNDAs: ["NDA2024007", "NDA2024008"],
+        accessLog: ["2024-05-20", "2024-05-25"],
+        securityAudits: ["AUD2024Q3"]
+      },
+      {
         id: "TS003",
         secretName: "Blockchain Consensus Protocol",
         category: "Protocol",
@@ -177,6 +201,18 @@ export const ipRights = {
         productLines: ["QP-2024", "QP-2024-Pro"],
         similarDesigns: ["ID789012", "ID789013"],
         manufacturingPartners: ["TechFab Inc."]
+      },
+      {
+        id: "ID004",
+        designName: "Quantum Chipset Cooling System",
+        componentType: "Thermal Management",
+        registrationDate: "2024-05-15",
+        designNumber: "DM/123459",
+        locarnoClass: "14-04",
+        designerName: "Ethan Wright",
+        productLines: ["QC-COOL-2024", "QC-COOL-2024-Pro"],
+        similarDesigns: ["ID789018", "ID789019"],
+        manufacturingPartners: ["CoolTech Ltd."]
       },
       {
         id: "ID002",
@@ -218,6 +254,18 @@ export const ipRights = {
         authorizedProducers: ["QuantumTech Inc.", "QFlow Systems"]
       },
       {
+        id: "GI004",
+        indication: "German AI Engineering",
+        region: "Berlin, Germany",
+        productCategory: "AI Hardware",
+        giRegistry: "DE-GI-2024-001",
+        certifyingBody: "German Tech Board",
+        qualityStandards: "QS-2024-DE",
+        producerAssociations: ["GAIA", "DE-AI-Consortium"],
+        qualityReports: ["QR2024-B1", "QR2024-B2"],
+        authorizedProducers: ["BerlinAI GmbH", "NeuralSystems AG"]
+      },
+      {
         id: "GI002",
         indication: "Tokyo AI Solutions",
         region: "Tokyo, Japan",
@@ -240,6 +288,48 @@ export const ipRights = {
         producerAssociations: ["SBSA", "ZASA"],
         qualityReports: ["QR2024-S1", "QR2024-S2"],
         authorizedProducers: ["SwissCrypto AG", "ZugTech GmbH"]
+      }
+    ],
+    softwareLicenses: [
+      {
+        id: "SL001",
+        softwareName: "Quantum Sim Pro",
+        licenseType: "Proprietary",
+        issueDate: "2024-06-01",
+        expirationDate: "2026-06-01",
+        licensedTo: ["TechCorp Inc.", "QuantumX Labs"],
+        restrictions: ["Non-transferable", "Single-user license"],
+        relatedPatents: ["PAT001", "PAT004"]
+      },
+      {
+        id: "SL002",
+        softwareName: "AI Optimization Suite",
+        licenseType: "Open Source",
+        issueDate: "2024-06-10",
+        expirationDate: "2029-06-10",
+        licensedTo: ["Global Research Labs", "OpenAI Consortium"],
+        restrictions: ["GPL v3", "Attribution required"],
+        relatedPatents: ["PAT005", "PAT006"]
+      },
+    ],
+    domainNames: [
+      {
+        id: "DN001",
+        domain: "quantumtech.com",
+        registrar: "Global Domains Inc.",
+        registrationDate: "2023-12-20",
+        expirationDate: "2025-12-20",
+        status: "Active",
+        relatedTrademarks: ["TM001"]
+      },
+      {
+        id: "DN002",
+        domain: "ai-solutions.org",
+        registrar: "Tech Domains Ltd.",
+        registrationDate: "2024-01-15",
+        expirationDate: "2026-01-15",
+        status: "Active",
+        relatedTrademarks: ["TM002"]
       }
     ]
   };

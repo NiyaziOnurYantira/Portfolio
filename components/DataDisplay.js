@@ -96,9 +96,9 @@ const DataDisplay = () => {
       </ul>
 
       
-      {dateField && (
+      {/* {dateField && (
         <PatentFilingLineChart items={dataset} dateField={dateField} />
-      )}
+      )} */}
     </div>
   );
 };
