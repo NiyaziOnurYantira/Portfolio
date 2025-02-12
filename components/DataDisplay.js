@@ -40,7 +40,7 @@ const DataDisplay = () => {
 
   return (
     <div style={{ padding: '1rem', maxWidth: '800px', margin: '0 auto', fontFamily: 'Arial, sans-serif' }}>
-      <h1>Veri Görselleştirme</h1>
+      <h1>Information About Data</h1>
 
       {/* Select dataset */}
       <div style={{ marginBottom: '1rem' }}>
@@ -70,7 +70,7 @@ const DataDisplay = () => {
       {/* Select field */}
       <div style={{ marginBottom: '1rem' }}>
         <label>
-          <strong>Alan (Field):</strong>&nbsp;
+          <strong>Field:</strong>&nbsp;
           <select 
             style={{ color: 'black', fontWeight: 'bold'}}
             value={selectedField} 
@@ -83,7 +83,7 @@ const DataDisplay = () => {
         </label>
       </div>
 
-      <h2>Sonuçlar</h2>
+      <h2>Results</h2>
       <ul>
         {dataset.map(item => (
           <li key={item.id} style={{ marginBottom: '0.5rem' }}>
